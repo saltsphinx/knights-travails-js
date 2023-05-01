@@ -1,4 +1,4 @@
-const Node = function NodeFactory(value) {
+const Node = function NodeFactory(coordinate) {
   const addNeighbor = function addNeighbor(neighbor) {
     const neighbors = Array.from(this);
 
@@ -11,7 +11,7 @@ const Node = function NodeFactory(value) {
 
   return {
     addNeighbor,
-    value,
+    coordinate,
     length: 0,
    };
 }
