@@ -9,7 +9,10 @@ const Node = function NodeFactory(value) {
     return this.length;
   }
 
-  return { addNeighbor, value, length: 0 };
+  return {
+    addNeighbor,
+    value,
+    length: 0 };
 }
 
 module.exports = Node;
