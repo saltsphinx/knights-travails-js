@@ -12,7 +12,8 @@ const Node = function NodeFactory(value) {
   return {
     addNeighbor,
     value,
-    length: 0 };
+    length: 0,
+   };
 }
 
 module.exports = Node;
