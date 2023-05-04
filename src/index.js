@@ -1,3 +1,3 @@
 const knightMoves = require('./knightMoves');
 
-console.log(knightMoves([5, 5]));
+knightMoves([0, 0], [7, 7]);
