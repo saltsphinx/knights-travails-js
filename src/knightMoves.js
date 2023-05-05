@@ -9,8 +9,7 @@ const knightMoves = function knightMoves(start, end) {
   discovered[start] = current;
 
   for (let i = 0; i < Object.values(discovered).length; i++) {
-    if (current.coord.toString() == end)
-    {
+    if (current.coord.toString() == end) {
       path = pathBuilder(current);
       break;
     }
@@ -18,7 +17,7 @@ const knightMoves = function knightMoves(start, end) {
     current.moves.forEach((move) => {
       if (discovered[move]) return;
       discovered[move] = Node(move, current);
-    })
+    });
 
     current = Object.values(discovered)[i];
   }
